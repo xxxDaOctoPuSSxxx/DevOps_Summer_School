@@ -19,4 +19,4 @@ then
 else
     echo $(tput setaf 1)"User [$username] doesn't exist, please use command adduser"
 fi
-# need add check if few subdirectories with same name 
+# need add check if few subdirectories with same
