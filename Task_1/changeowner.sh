@@ -13,7 +13,7 @@ then
     echo $(tput setaf 1)"The directory :$2 dose'n exist in your filesystem"
   elif [[ `sed -n "/^$username/p" /etc/passwd` ]]; #find if user exist
   then echo $(tput setaf 2)"User [$username] Found"
-       echo "Owner of all files & directory with subdirectories $PWD will be  changed to:" $(tput setaf 3)$1
+       echo "Owner of all files & directory with subdirectories $2 will be  changed to:" $(tput setaf 3)$1
        chown -R $1:$1 $2
        echo $(tput setaf 2)"All done!!! owner is $1"
 else
